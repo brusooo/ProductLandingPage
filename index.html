@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Toys</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://bit.ly/33H6QVQ"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Header-->
+    <header>
+      <div class="logo">
+        <img class="imgLogo" src="https://bit.ly/33H6QVQ" alt="logo" />
+        <h1 class="logoHeading">Pokemon<span> .</span></h1>
+      </div>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navbar">
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- Home -->
+    <section id="banner">
+      <div class="content">
+        <h1>Hey Everyone <span>!</span></h1>
+        <p class="description">Check out our latest toys collections</p>
+        <br />
+        <p>
+          <a href="#" class="login">Login</a>
+          <a href="#" class="signup">Sign Up</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="title">
+        <h1>Our Features <span> .</span></h1>
+      </div>
+      <div class="container">
+        <div class="feature top">
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/3098/premium/3098041.png?token=exp=1642592488~hmac=b861cc64903f35328baa0869ba31165d"
+            alt="premium"
+          />
+          <div class="info">
+            <h1>Premium Materials</h1>
+            <p>
+              Our toys are made of premium quality materials . It's not fragile
+              .
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="https://bit.ly/3fz14Iy" alt="shipping" />
+          <div class="info">
+            <h1>Fast Shipping</h1>
+            <p>
+              We make sure you recieve your toys as soon as possible. We also
+              provide free returns if it's broken.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/3908/premium/3908418.png?token=exp=1642592488~hmac=f7dd3bed9f6d65b34f2ec68104212eef"
+            alt="quality"
+          />
+          <div class="info">
+            <h1>Quality Assurance</h1>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price -->
+    <section id="products">
+      <div class="title">
+        <h1>Our Products <span> .</span></h1>
+      </div>
+      <div class="productContainer top">
+        <div class="imgBx">
+          <img src="https://bit.ly/3GF2PQ7" alt="Tapu Koko" />
+        </div>
+        <div class="productContent">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            temporibus non, neque repellendus consequuntur vitae aliquam officia
+            illo a id.
+          </p>
+          <p><a href="#">Buy</a></p>
+        </div>
+      </div>
+      <div class="productContainer">
+        <div class="imgBx">
+          <img src="https://bit.ly/3fxUCkR" alt="Sylveon" />
+        </div>
+        <div class="productContent">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            temporibus non, neque repellendus consequuntur vitae aliquam officia
+            illo a id.
+          </p>
+          <p><a href="#">Buy</a></p>
+        </div>
+      </div>
+      <div class="productContainer">
+        <div class="imgBx">
+          <img src="https://bit.ly/3GEtbls" alt="Aurorus" />
+        </div>
+        <div class="productContent">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            temporibus non, neque repellendus consequuntur vitae aliquam officia
+            illo a id.
+          </p>
+          <p><a href="#">Buy</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us-->
+    <section id="contact">
+      <div class="title">
+        <h1>Contact Us <span> .</span></h1>
+      </div>
+      <div class="formContainer">
+        <form action="#">
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="user"
+            placeholder="Enter Your Name"
+            required
+          /><br /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          /><br /><br />
+          <label for="comments">Comments</label><br />
+          <textarea
+            name="comments"
+            id="comments"
+            cols="28"
+            rows="5"
+            placeholder="Leave Your Comments Here..."
+          ></textarea
+          ><br /><br />
+          <input type="submit" id="mess" value="Submit" />
+          <img id="message" src="https://bit.ly/3IdPfUq" alt="Message" />
+        </form>
+      </div>
+      <div class="formImg">
+        <p><img src="https://bit.ly/3qEeYzu" alt="Tapu Fini" /></p>
+      </div>
+    </section>
+
+    <!-- Copyright Ingo-->
+    <footer id="footer">
+      <p>Copyright &copy 2022 <span>Brusooo</span>.</p>
+    </footer>
+
+    <!-- Script for sticky scroll-->
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle");
+        menuToggle.classList.toggle("active");
+
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

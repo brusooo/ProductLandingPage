@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@1,500&family=The+Nautigal:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://bit.ly/3Kj3RDK");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: 0.9s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 5px 10px;
+  margin: -15px 0px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+  top: 0;
+  left: 0;
+  margin: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .imgLogo {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+}
+
+header .logoHeading {
+  font-size: 1rem;
+  font-weight: 1200;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #fff;
+  transition: 0.3s;
+}
+
+header.sticky .logoHeading {
+  color: #e91e63;
+}
+
+span {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 1200;
+  transition: 0.5s;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #e91e63;
+}
+
+header .navbar{
+  position: relative;
+  float: right;
+  margin: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar li {
+  list-style: none;
+  margin: 0 20px 0 20px;
+}
+
+header .navbar li a {
+  text-decoration: none;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+header.sticky .navbar li a {
+  color: #e91e63;
+}
+
+header.sticky .navbar li a:hover {
+  letter-spacing: 2px;
+  background: none;
+}
+
+header .navbar li a:hover {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #e91e63;
+}
+
+.content {
+  position: absolute;
+  top: 350px;
+  left: 90px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content span {
+  font-size: 3rem;
+}
+
+.content .description {
+  margin-top: 10px;
+  font-weight: 1000;
+  font-size: 1.5rem;
+}
+
+.content .login,
+.content .signup {
+  position: relative;
+  background-color: #e91e63;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.content .login:hover,
+.content .signup:hover {
+  letter-spacing: 2px;
+}
+
+#features,
+#products,
+#contact{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://bit.ly/3A6ebdz");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+
+#features .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#features .container .feature {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}
+
+#features .container .feature img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 50px;
+  transition: 0.5s;
+}
+
+#features .container .feature:hover img {
+  transform: scale(1.3);
+}
+
+#features .container .feature .info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+#features .container .feature .info h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e91e63;
+}
+
+#features .container .feature .info p {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+#features .title,
+#products .title,
+#contact  .title {
+  position: absolute;
+  top:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 1.4rem;
+  z-index: 1;
+  transition: 0.5s;
+  color: #fff;
+}
+
+
+
+#features .title:hover,
+#products .title:hover,
+#contact  .title:hover {
+  color: #e91e63;
+}
+
+#features .title:hover span,
+#products .title:hover span,
+#contact  .title:hover span {
+  transition: 0.5s;
+  color: #fff;
+}
+
+#products {
+  background-image: url("https://bit.ly/3fzoQ7e");
+}
+
+#products .productContainer{
+  position: relative;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 120px 50px;
+  padding: 20px;
+  background-color: #fdfcfa;
+  border-radius: 30px;
+  border: 4px solid #e91e63;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+#products .productContainer .imgBx {
+  position: relative;
+  top: -20px;
+  width: 250px;
+  height: 250px;
+}
+
+#products .productContainer:hover img {
+  top: -20px;
+  transform: scale(1.13);
+}
+
+#products .productContainer .imgBx img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-out;
+}
+
+#products .productContainer .productContent p {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#products .productContainer .productContent p a {
+  position: relative;
+  width: 80px;
+  height: 36px;
+  border-radius: 50px;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #e91e63;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+#products .productContainer:hover p a {
+  transform: scale(1.2);
+}
+
+#contact {
+  background-image: url("https://bit.ly/326McOe");
+}
+
+#contact .formContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  margin: 120px 50px;
+  margin-right: 0px;
+  background-color: #fff;
+  border: 5px solid #e91e63;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  line-height: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+#contact .formContainer input,
+textarea {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 2px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"] {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background-color: #e91e63;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#contact .formContainer input[type="submit"]:hover{
+  letter-spacing: 1px;
+}
+
+#contact .formContainer #message {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: -10px;
+  float: right;
+  transform: rotate(-45deg);
+  transition: transform 0.5s;
+  opacity: 0.8;
+}
+
+#contact .formContainer #message:hover{
+  transform: rotate(315deg);
+  transition: transform 1.8s;
+}
+
+#contact .formContainer textarea {
+  resize: none;
+  outline: none;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 12px;
+}
+
+#contact .formImg {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  transition: 0.5s;
+}
+
+#contact .formImg img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+#contact .formImg:hover img {
+  transform: scale(1.05);
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e91e63;
+  color: #fff;
+  font-family: "Mochiy Pop P One", sans-serif;
+  cursor: pointer;
+}
+
+#footer p:hover span {
+  font-size: 1.3rem;
+}
+
+#footer p span {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 500px){
+
+  .content {
+    top: 400px;
+    left: 40px;
+  }
+  
+
+  #banner .content h1 {
+    font-size: 2rem;
+  }
+  
+  #banner .content span {
+    font-size: 2rem;
+  }
+
+  #banner .content .description{
+    font-size: 1.2rem;
+  }
+
+  #features .container .feature {
+    width: 100%;
+  }
+
+  #features .container .feature img{
+    left: 8%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  #contact .formContainer textarea{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  
+  header .navbar{
+    display: none;
+  }
+
+  header .navbar.active{
+    width: 30%;
+    height: 30%;
+    margin: 100px 0 0 66%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.9);
+    line-height: 40px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+
+
+  header .navbar.active li{
+    list-style: none;
+  }
+
+  header .navbar.active li a{
+    color: #ff4500;
+  }
+
+  header .navbar.active li a:hover{
+    letter-spacing: 2px;
+    background: none;
+  }
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: url("https://cdn-icons-png.flaticon.com/128/812/812847.png");
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+  }
+
+  .menuToggle.active{
+    background: url("https://cdn-icons-png.flaticon.com/512/1828/1828665.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #products,#features{
+    flex-direction: column;
+  }
+
+  #products .productContainer{
+    margin: 30px 0 50px 0;
+  }
+  
+  #contact .formContainer{
+    width: 600%;
+  }
+
+  #contact .formImg img{
+    display: none;
+  }
+
+  #products .top,
+  #features .container .top{
+    margin-top: 105px;
+  }
+
+}
