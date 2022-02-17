@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://bit.ly/3Kj3RDK");
+  background-image: url("https://raw.githubusercontent.com/brusooo/ProductLandingPage/master/assets/banner.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -174,7 +174,7 @@ header .navbar li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://bit.ly/3A6ebdz");
+  background-image: url("https://raw.githubusercontent.com/brusooo/ProductLandingPage/master/assets/features.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 10px;
@@ -261,7 +261,7 @@ header .navbar li a:hover {
 }
 
 #products {
-  background-image: url("https://bit.ly/3fzoQ7e");
+  background-image: url("https://raw.githubusercontent.com/brusooo/ProductLandingPage/master/assets/products.jpeg");
 }
 
 #products .productContainer{
@@ -330,7 +330,7 @@ header .navbar li a:hover {
 }
 
 #contact {
-  background-image: url("https://bit.ly/326McOe");
+  background-image: url("https://raw.githubusercontent.com/brusooo/ProductLandingPage/master/assets/contact.jpeg");
 }
 
 #contact .formContainer {
